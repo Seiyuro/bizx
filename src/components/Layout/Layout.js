@@ -6,7 +6,7 @@ import FooterContainer from "../../containers/FooterContainer/FooterContainer";
 
 // We load the 3 main Containers
 // We use the Aux to avoid use divs.
-const layout = () => (
+const Layout = () => (
   <Aux>
     <HeadContainer />
     <BodyContainer />
@@ -14,4 +14,4 @@ const layout = () => (
   </Aux>
 );
 
-export default layout;
+export default Layout;
