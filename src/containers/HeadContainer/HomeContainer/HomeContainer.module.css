@@ -1,0 +1,10 @@
+.homeButton {
+  align-items: flex-end;
+  box-sizing: content-box;
+  display: flex;
+  flex-basis: 15%;
+  justify-content: flex-end;
+  padding: 1em;
+  font-weight: bold;
+  color: green;
+}

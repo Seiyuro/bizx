@@ -4,65 +4,37 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## To install.
+
+### npm install
+
+##To Run.
+
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Author Notes:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Hello, this is a test Project that I did. You would find comments along of all the code, but just like a FYI... I used React for this project, I created this containers, most of them are staless container since I not reall using the state so, didnt bother in create a class component, the only component that is a class Component is the Body one, since one of the requirements was and I quote:
 
-### `npm test`
+"-- The footer should have neither fixed nor absolute positioning. We want it so that the footer would get pushed off screen if there were more page content."
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+So the footer is neither fixed or relative position, and its going to "grown" if there is more content, so to test that I created a small state to manipulated the amount of images that we want to render, feel free to add more to test it.
 
-### `npm run build`
+In general I used css modules, I could used sass and maybe its a little bit overkilled for this small app, but in general that is how I like to work, some projects I have used Sass but since there is not much nesting for the project I guess should be okay with only css.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I separeted all the elements into 3 Basic Main containers "HeadContainer, BodyContainer and FooterContainer".
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## The Head Container.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The HeadContainer have 3 sub containers one for the Title, one for the logo in the middle and one for the Home Button. The are just super basic staless component only the middleContainer have an image that Im using like a placeholder image.
+All the Stuffs are made with CSS Flex-box is doing all the magic by itself Im just using it. (FYI I think looks okay in responsive as well)
 
-### `npm run eject`
+## The Body Container
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This component its the only that have the state and I just added to test how everything looks when I add more items, I create a container for the images and Im passing like a prop to that container the number of images that we want to render. Im using flex-box again to handle the alignment of the images, since this one didnt have messures I just took some sizes that I though would be okay!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## The Footer Container
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This is also a super simple component that only have the footer, used again flex box to align everything.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thanks!

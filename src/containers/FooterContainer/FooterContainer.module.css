@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: #bebebe80;
+  font-size: 1em;
+  align-content: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}

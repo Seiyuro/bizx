@@ -1,0 +1,17 @@
+.middleContainer {
+  align-items: center;
+  display: flex;
+  flex-basis: 70%;
+  justify-content: center;
+}
+
+.greyContainer {
+  align-items: center;
+  background-color: #bebebe80;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 130px;
+  font-size: 0.5em;
+  color: #707070;
+}
